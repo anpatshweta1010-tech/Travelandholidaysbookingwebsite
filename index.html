@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Travel & Holidays</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/travel-options.css">
+    
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-airplane"></i>
+                Travel & Holidays
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">
+                            Destinations
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">
+                            Packages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="book-now.html">
+                            Book Now
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero-section">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <span class="hero-badge">
+                        ✈️ Explore • Travel • Discover
+                    </span>
+
+                    <h1>
+                        Discover Your
+                        <span>Dream Destination</span>
+                    </h1>
+
+                    <p>
+                        Explore beautiful destinations, amazing tour packages
+                        and unforgettable travel experiences with us.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="destination.html"
+                            class="btn btn-primary btn-lg">
+
+                            Explore Destinations
+                            <i class="bi bi-arrow-right"></i>
+
+                        </a>
+
+                        <a
+                            href="packages.html"
+                            class="btn btn-outline-light btn-lg">
+
+                            View Packages
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+
+
+    <!-- ================= TRAVEL OPTIONS ================= -->
+
+    <section class="travel-options-section py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-4">
+                <span class="travel-section-label">TRAVEL YOUR WAY</span>
+                <h2>Choose Your Travel Option</h2>
+                <p class="text-muted">
+                    Check availability and choose the best way to reach your destination.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-6 col-lg-3">
+                    <button type="button" class="travel-option-card" data-travel-type="airplane">
+                        <span class="travel-option-icon"><i class="bi bi-airplane-fill"></i></span>
+                        <h4>By Airoplane</h4>
+                        <p>Find available flights</p>
+                    </button>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <button type="button" class="travel-option-card" data-travel-type="bus">
+                        <span class="travel-option-icon"><i class="bi bi-bus-front-fill"></i></span>
+                        <h4>By Bus</h4>
+                        <p>Find available buses</p>
+                    </button>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <button type="button" class="travel-option-card" data-travel-type="cab">
+                        <span class="travel-option-icon"><i class="bi bi-car-front-fill"></i></span>
+                        <h4>By Cabs</h4>
+                        <p>Find available cabs</p>
+                    </button>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <button type="button" class="travel-option-card" data-travel-type="train">
+                        <span class="travel-option-icon"><i class="bi bi-train-front-fill"></i></span>
+                        <h4>By Train</h4>
+                        <p>Find available trains</p>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= AVAILABILITY MODAL ================= -->
+
+    <div class="modal fade" id="travelAvailabilityModal" tabindex="-1" aria-hidden="true">
+
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+
+            <div class="modal-content travel-modal-content">
+
+                <div class="modal-header">
+                    <div>
+                        <span class="travel-section-label" id="travelModalLabel">TRAVEL OPTIONS</span>
+                        <h4 class="modal-title" id="travelModalTitle">Check Availability</h4>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="travelSearchForm" class="travel-search-form">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-4">
+                                <label for="travelFrom" class="form-label">From</label>
+                                <input type="text" class="form-control" id="travelFrom" placeholder="e.g. Pune" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="travelTo" class="form-label">To</label>
+                                <input type="text" class="form-control" id="travelTo" placeholder="e.g. Delhi" required>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="travelDateSearch" class="form-label">Travel Date</label>
+                                <input type="date" class="form-control" id="travelDateSearch" required>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary px-4">
+                                <i class="bi bi-search me-1"></i> Check Availability
+                            </button>
+                        </div>
+
+                    </form>
+
+                    <div id="travelResults" class="travel-results mt-4"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!-- about us -->
+<section id="about" class="about-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-subtitle">
+                Discover the world with us and make every journey memorable.
+            </p>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+            <div class="col-lg-6">
+                <div class="about-image">
+                    <img src="images/aboutus.jpg"
+                         alt="Travel and Holidays"
+                         class="img-fluid">
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-6">
+                <div class="about-content">
+
+                    <h3>Explore More, Travel More</h3>
+
+                    <p>
+                        Welcome to <strong>Travel & Holidays</strong>, your trusted
+                        travel partner for discovering beautiful destinations
+                        with comfort and convenience.
+                    </p>
+
+                    <p>
+                        Our website makes travel planning easier by providing
+                        information about destinations, tour packages and
+                        different transportation options such as
+                        <strong>Flights, Buses, Cabs and Trains</strong>.
+                    </p>
+
+                    <p>
+                        You can also check availability and make your booking
+                        easily from one place.
+                    </p>
+
+                    <div class="about-features">
+                        <div>
+                            <i class="bi bi-airplane"></i>
+                            <span>Easy Travel Options</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-calendar-check"></i>
+                            <span>Easy Booking</span>
+                        </div>
+
+                        <div>
+                            <i class="bi bi-geo-alt"></i>
+                            <span>Beautiful Destinations</span>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="btn about-btn mt-3">
+                        Contact Us
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="simple-footer">
+
+        <p>
+            © 2026 Travel & Holidays | Explore the World 🌍
+        </p>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+
+    <!-- Custom JS -->
+
+    <script src="js/script.js"></script>
+    <script src="js/travel-options.js"></script>
+
+</body>
+
+</html>
