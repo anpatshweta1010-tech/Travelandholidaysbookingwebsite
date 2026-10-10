@@ -1,0 +1,550 @@
+/* =====================================================
+GENERAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f8fafc;
+color: #1e293b;
+}
+
+/* =====================================================
+NAVBAR
+===================================================== */
+
+.navbar {
+background: rgba(5, 20, 40, 0.95);
+
+padding: 15px 0;
+
+transition: 0.3s;
+
+}
+
+.navbar-brand {
+font-size: 22px;
+}
+
+.navbar-brand i {
+color: #38bdf8;
+
+margin-right: 7px;
+
+}
+
+.nav-link {
+margin-left: 15px;
+
+font-weight: 500;
+
+transition: 0.3s;
+
+}
+
+.nav-link:hover,
+.nav-link.active {
+color: #38bdf8 !important;
+}
+
+/* =====================================================
+PAGE HEADER
+===================================================== */
+
+.page-header {
+
+margin-top: 70px;
+
+padding: 100px 20px 80px;
+
+background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #0d6efd
+    );
+
+color: white;
+
+text-align: center;
+
+}
+
+.page-header span {
+
+color: #7dd3fc;
+
+font-size: 14px;
+
+font-weight: bold;
+
+letter-spacing: 2px;
+
+}
+
+.page-header h1 {
+
+font-size: 48px;
+
+font-weight: 700;
+
+margin: 12px 0;
+
+}
+
+.page-header h1 strong {
+
+color: #38bdf8;
+
+}
+
+.page-header p {
+
+color: #e2e8f0;
+
+font-size: 17px;
+
+margin: 0;
+
+}
+
+/* =====================================================
+PACKAGES SECTION
+===================================================== */
+
+.packages-section {
+
+padding: 80px 0;
+
+}
+
+/* =====================================================
+TOUR CARD
+===================================================== */
+
+.tour-card {
+
+background: white;
+
+border-radius: 15px;
+
+overflow: hidden;
+
+height: 100%;
+
+box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.08);
+
+transition: 0.3s;
+
+}
+
+.tour-card:hover {
+
+transform: translateY(-8px);
+
+box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.13);
+
+}
+
+/* =====================================================
+TOUR CARD IMAGE
+===================================================== */
+
+.tour-card-image {
+
+height: 220px;
+
+position: relative;
+
+overflow: hidden;
+
+}
+
+.tour-card-image img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+transition: 0.5s;
+
+}
+
+.tour-card:hover
+.tour-card-image img {
+
+transform: scale(1.08);
+
+}
+
+/* =====================================================
+TOUR LABEL
+===================================================== */
+
+.tour-label {
+
+position: absolute;
+
+top: 15px;
+
+left: 15px;
+
+background: #0d6efd;
+
+color: white;
+
+padding: 6px 13px;
+
+border-radius: 20px;
+
+font-size: 12px;
+
+font-weight: bold;
+
+}
+
+/* =====================================================
+TOUR CARD CONTENT
+===================================================== */
+
+.tour-card-content {
+
+padding: 22px;
+
+}
+
+.tour-location {
+
+color: #0d6efd;
+
+font-size: 14px;
+
+font-weight: 600;
+
+}
+
+.tour-card-content h3 {
+
+font-size: 21px;
+
+font-weight: 700;
+
+margin: 10px 0;
+
+}
+
+.tour-card-content p {
+
+color: #64748b;
+
+line-height: 1.6;
+
+min-height: 70px;
+
+}
+
+/* =====================================================
+TOUR INFO
+===================================================== */
+
+.tour-info {
+
+display: flex;
+
+justify-content: space-between;
+
+gap: 10px;
+
+flex-wrap: wrap;
+
+padding: 12px 0;
+
+border-top: 1px solid #e2e8f0;
+
+border-bottom: 1px solid #e2e8f0;
+
+font-size: 13px;
+
+color: #475569;
+
+}
+
+/* =====================================================
+TOUR BOTTOM
+===================================================== */
+
+.tour-bottom {
+
+display: flex;
+
+justify-content: space-between;
+
+align-items: center;
+
+gap: 10px;
+
+margin-top: 18px;
+
+}
+
+.tour-bottom small {
+
+display: block;
+
+color: #64748b;
+
+font-size: 11px;
+
+}
+
+.tour-bottom strong {
+
+display: block;
+
+color: #0d6efd;
+
+font-size: 21px;
+
+margin-top: 2px;
+
+}
+
+.tour-bottom button {
+
+border: none;
+
+background: #0d6efd;
+
+color: white;
+
+padding: 9px 14px;
+
+border-radius: 8px;
+
+font-weight: 600;
+
+cursor: pointer;
+
+transition: 0.3s;
+
+}
+
+.tour-bottom button:hover {
+
+background: #084298;
+
+}
+
+/* =====================================================
+MODAL
+===================================================== */
+
+.modal-content {
+
+border: none;
+
+border-radius: 18px;
+
+overflow: hidden;
+
+}
+
+.modal-header {
+
+background: #0d6efd;
+
+color: white;
+
+border: none;
+
+}
+
+.modal-header .btn-close {
+
+filter: brightness(0) invert(1);
+
+}
+
+.modal-body {
+
+padding: 30px;
+
+}
+
+.package-modal-icon {
+
+width: 65px;
+
+height: 65px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background: #e0f2fe;
+
+color: #0d6efd;
+
+border-radius: 50%;
+
+font-size: 28px;
+
+margin-bottom: 15px;
+
+}
+
+.modal-body h4 {
+
+font-weight: 700;
+
+margin-bottom: 12px;
+
+}
+
+.modal-body > p {
+
+color: #64748b;
+
+line-height: 1.7;
+
+}
+
+.package-detail-box {
+
+background: #f8fafc;
+
+padding: 18px;
+
+border-radius: 12px;
+
+margin-top: 20px;
+
+}
+
+.package-detail-box p {
+
+margin-bottom: 10px;
+
+color: #475569;
+
+}
+
+.package-detail-box p:last-child {
+
+margin-bottom: 0;
+
+}
+
+.package-detail-box strong {
+
+color: #0d6efd;
+
+}
+
+.included-title {
+
+margin-top: 25px;
+
+margin-bottom: 12px;
+
+}
+
+.includes-list {
+
+padding-left: 20px;
+
+color: #475569;
+
+}
+
+.includes-list li {
+
+margin-bottom: 7px;
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+.footer {
+
+background: #07152f;
+
+color: white;
+
+padding: 40px 20px;
+
+}
+
+.footer h5 {
+
+font-size: 21px;
+
+margin-bottom: 10px;
+
+}
+
+.footer h5 i {
+
+color: #38bdf8;
+
+}
+
+.footer p {
+
+color: #cbd5e1;
+
+margin-bottom: 8px;
+
+}
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media (max-width: 576px) {
+
+.page-header {
+
+    padding: 80px 15px 60px;
+
+}
+
+
+.page-header h1 {
+
+    font-size: 36px;
+
+}
+
+
+.packages-section {
+
+    padding: 60px 15px;
+
+}
+
+
+.tour-info {
+
+    flex-direction: column;
+
+}
+
+}
