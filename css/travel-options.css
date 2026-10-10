@@ -1,0 +1,357 @@
+/* ================= TRAVEL OPTIONS SECTION ================= */
+
+.travel-options-section {
+    background: linear-gradient(135deg, #f0f7ff, #ffffff, #eaf4ff);
+    padding: 70px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Section Heading */
+
+.travel-section-label {
+    display: inline-block;
+    color: #0d6efd;
+    background: rgba(13, 110, 253, 0.10);
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.travel-options-section h2 {
+    color: #10213a;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.travel-options-section .text-muted {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* ================= TRAVEL OPTION CARDS ================= */
+
+.travel-option-card {
+    width: 100%;
+    min-height: 230px;
+    padding: 30px 18px;
+    background: #ffffff;
+    border: 1px solid #e0e9f5;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(20, 50, 90, 0.07);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top Accent Line */
+
+.travel-option-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #20c5ff);
+    transition: width 0.35s ease;
+}
+
+.travel-option-card:hover::before {
+    width: 100%;
+}
+
+/* Card Hover */
+
+.travel-option-card:hover {
+    transform: translateY(-10px);
+    border-color: #9dc5ff;
+    box-shadow: 0 18px 38px rgba(13, 110, 253, 0.16);
+}
+
+/* Travel Icons */
+
+.travel-option-icon {
+    width: 78px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #e8f2ff, #d9eaff);
+    color: #0d6efd;
+    font-size: 35px;
+    transition: all 0.35s ease;
+}
+
+.travel-option-card:hover .travel-option-icon {
+    background: linear-gradient(135deg, #0d6efd, #00aaff);
+    color: #ffffff;
+    transform: scale(1.08) rotate(-3deg);
+}
+
+/* Card Titles */
+
+.travel-option-card h4 {
+    color: #152943;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.travel-option-card p {
+    color: #718096;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+/* Keyboard Focus */
+
+.travel-option-card:focus-visible {
+    outline: 3px solid #80bdff;
+    outline-offset: 4px;
+}
+
+/* ================= AVAILABILITY MODAL ================= */
+
+.travel-modal-content {
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(12, 35, 70, 0.20);
+}
+
+.travel-modal-content .modal-header {
+    padding: 25px 28px;
+    background: linear-gradient(135deg, #102b50, #0d6efd);
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.travel-modal-content .travel-section-label {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.16);
+    margin-bottom: 8px;
+}
+
+.travel-modal-content .modal-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.travel-modal-content .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.travel-modal-content .btn-close:hover {
+    opacity: 1;
+}
+
+.travel-modal-content .modal-body {
+    padding: 30px;
+    background: #ffffff;
+}
+
+/* Form Labels */
+
+.travel-search-form .form-label {
+    color: #263b55;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+
+/* Form Inputs */
+
+.travel-search-form .form-control {
+    min-height: 48px;
+    border: 1px solid #d9e3f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    color: #263b55;
+    background-color: #f9fbff;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.travel-search-form .form-control:focus {
+    background-color: #ffffff;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+    outline: none;
+}
+
+.travel-search-form .form-control::placeholder {
+    color: #9aa8b9;
+}
+
+/* Search Button */
+
+.travel-search-form .btn-primary {
+    min-height: 48px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0d6efd, #0879e8);
+    font-weight: 600;
+    box-shadow: 0 7px 18px rgba(13, 110, 253, 0.20);
+    transition: all 0.3s ease;
+}
+
+.travel-search-form .btn-primary:hover {
+    background: linear-gradient(135deg, #084dbb, #0069d9);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(13, 110, 253, 0.28);
+}
+
+/* ================= TRAVEL RESULTS ================= */
+
+.travel-results {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.travel-results:empty {
+    display: none;
+}
+
+/* Optional result cards.
+   Use class="travel-result-card" for each result. */
+
+.travel-result-card {
+    padding: 20px;
+    background: #f7faff;
+    border: 1px solid #e0eaf7;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.travel-result-card:hover {
+    border-color: #9dc5ff;
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.08);
+    transform: translateY(-3px);
+}
+
+.travel-result-card h5 {
+    color: #17345b;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.travel-result-card p {
+    color: #68788c;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+.travel-result-card .btn {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* ================= TABLET RESPONSIVE ================= */
+
+@media (max-width: 991.98px) {
+    .travel-options-section {
+        padding: 55px 0;
+    }
+
+    .travel-option-card {
+        min-height: 215px;
+        padding: 25px 14px;
+    }
+
+    .travel-option-icon {
+        width: 68px;
+        height: 68px;
+        font-size: 30px;
+    }
+
+    .travel-modal-content .modal-body {
+        padding: 24px;
+    }
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 575.98px) {
+    .travel-options-section {
+        padding: 45px 0;
+    }
+
+    .travel-options-section h2 {
+        font-size: 26px;
+    }
+
+    .travel-options-section .text-muted {
+        font-size: 13px;
+    }
+
+    .travel-section-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .travel-option-card {
+        min-height: 190px;
+        padding: 22px 10px;
+        border-radius: 16px;
+    }
+
+    .travel-option-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 27px;
+        border-radius: 17px;
+        margin-bottom: 15px;
+    }
+
+    .travel-option-card h4 {
+        font-size: 16px;
+    }
+
+    .travel-option-card p {
+        font-size: 12px;
+    }
+
+    .travel-modal-content .modal-header {
+        padding: 20px;
+    }
+
+    .travel-modal-content .modal-title {
+        font-size: 20px;
+    }
+
+    .travel-modal-content .modal-body {
+        padding: 20px 16px;
+    }
+
+    .travel-search-form .btn-primary {
+        width: 100%;
+    }
+}
+
+/* ================= REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .travel-option-card,
+    .travel-option-card::before,
+    .travel-option-icon,
+    .travel-result-card,
+    .travel-search-form .btn-primary {
+        transition: none;
+    }
+}
