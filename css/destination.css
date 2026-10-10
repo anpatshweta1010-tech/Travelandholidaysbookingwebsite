@@ -1,0 +1,420 @@
+/* =====================================================
+GENERAL
+===================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f8fafc;
+color: #1e293b;
+}
+
+/* =====================================================
+NAVBAR
+===================================================== */
+
+.navbar {
+background: rgba(5, 20, 40, 0.95);
+
+padding: 15px 0;
+
+transition: 0.3s;
+
+}
+
+.navbar-brand {
+font-size: 22px;
+}
+
+.navbar-brand i {
+color: #38bdf8;
+margin-right: 7px;
+}
+
+.nav-link {
+margin-left: 15px;
+font-weight: 500;
+
+transition: 0.3s;
+
+}
+
+.nav-link:hover,
+.nav-link.active {
+color: #38bdf8 !important;
+}
+
+/* =====================================================
+PAGE HEADER
+===================================================== */
+
+.page-header {
+
+margin-top: 70px;
+
+padding: 100px 20px 80px;
+
+background:
+    linear-gradient(
+        135deg,
+        #0f172a,
+        #0d6efd
+    );
+
+color: white;
+
+text-align: center;
+
+}
+
+.page-header span {
+
+font-size: 14px;
+
+letter-spacing: 2px;
+
+font-weight: bold;
+
+color: #7dd3fc;
+
+}
+
+.page-header h1 {
+
+font-size: 48px;
+
+font-weight: 700;
+
+margin: 12px 0;
+
+}
+
+.page-header h1 strong {
+
+color: #38bdf8;
+
+}
+
+.page-header p {
+
+margin: 0;
+
+font-size: 17px;
+
+color: #e2e8f0;
+
+}
+
+/* =====================================================
+DESTINATION SECTION
+===================================================== */
+
+.destination-section {
+
+padding: 80px 0;
+
+}
+
+/* =====================================================
+DESTINATION CARD
+===================================================== */
+
+.destination-card {
+
+background: white;
+
+border-radius: 15px;
+
+overflow: hidden;
+
+height: 100%;
+
+box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.08);
+
+transition: 0.3s;
+
+}
+
+.destination-card:hover {
+
+transform: translateY(-8px);
+
+box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.13);
+
+}
+
+/* =====================================================
+DESTINATION IMAGE
+===================================================== */
+
+.destination-image {
+
+height: 220px;
+
+position: relative;
+
+overflow: hidden;
+
+}
+
+.destination-image img {
+
+width: 100%;
+
+height: 100%;
+
+object-fit: cover;
+
+transition: 0.5s;
+
+}
+
+.destination-card:hover
+.destination-image img {
+
+transform: scale(1.08);
+
+}
+
+/* =====================================================
+BADGE
+===================================================== */
+
+.destination-badge {
+
+position: absolute;
+
+top: 15px;
+
+right: 15px;
+
+background: #0d6efd;
+
+color: white;
+
+padding: 6px 12px;
+
+border-radius: 20px;
+
+font-size: 12px;
+
+font-weight: bold;
+
+}
+
+/* =====================================================
+CARD CONTENT
+===================================================== */
+
+.destination-content {
+
+padding: 22px;
+
+}
+
+.destination-content h4 {
+
+font-weight: 700;
+
+margin-bottom: 10px;
+
+}
+
+.destination-content h4 i {
+
+color: #0d6efd;
+
+}
+
+.destination-content p {
+
+color: #64748b;
+
+line-height: 1.6;
+
+min-height: 75px;
+
+}
+
+/* =====================================================
+MODAL
+===================================================== */
+
+.modal-content {
+
+border: none;
+
+border-radius: 18px;
+
+overflow: hidden;
+
+}
+
+.modal-header {
+
+background: #0d6efd;
+
+color: white;
+
+border: none;
+
+}
+
+.modal-header .btn-close {
+
+filter: brightness(0) invert(1);
+
+}
+
+.modal-body {
+
+padding: 30px;
+
+}
+
+.modal-icon {
+
+width: 65px;
+
+height: 65px;
+
+background: #e0f2fe;
+
+color: #0d6efd;
+
+border-radius: 50%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+font-size: 28px;
+
+margin-bottom: 15px;
+
+}
+
+.modal-body h4 {
+
+font-weight: 700;
+
+margin-bottom: 12px;
+
+}
+
+.modal-body > p {
+
+color: #64748b;
+
+line-height: 1.7;
+
+}
+
+.destination-detail-box {
+
+background: #f8fafc;
+
+padding: 20px;
+
+border-radius: 12px;
+
+margin-top: 20px;
+
+}
+
+.destination-detail-box p {
+
+margin-bottom: 12px;
+
+color: #475569;
+
+}
+
+.destination-detail-box p:last-child {
+
+margin-bottom: 0;
+
+}
+
+.destination-detail-box strong {
+
+color: #0d6efd;
+
+}
+
+/* =====================================================
+FOOTER
+===================================================== */
+
+.footer {
+
+background: #07152f;
+
+color: white;
+
+padding: 40px 20px;
+
+}
+
+.footer h5 {
+
+font-size: 21px;
+
+margin-bottom: 10px;
+
+}
+
+.footer h5 i {
+
+color: #38bdf8;
+
+}
+
+.footer p {
+
+color: #cbd5e1;
+
+margin-bottom: 8px;
+
+}
+
+/* =====================================================
+RESPONSIVE
+===================================================== */
+
+@media (max-width: 576px) {
+
+.page-header {
+
+    padding: 80px 15px 60px;
+
+}
+
+
+.page-header h1 {
+
+    font-size: 36px;
+
+}
+
+
+.destination-section {
+
+    padding: 60px 15px;
+
+}
+
+}
